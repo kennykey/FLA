@@ -5,11 +5,11 @@ public class Main {
 	Scanner scan = new Scanner(System.in);
 	
 	public void cls() {
-		for(int i=0;i<25;i++) System.out.println();
+		//for(int i=0;i<25;i++) System.out.println();
 	}
 	
 	public void MainMenu() {
-		System.out.println("");
+		System.out.println("hello");
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -72,6 +72,7 @@ public class Main {
 		}
 			
 		}while(choose !=0);
+		
 	}
 
 	public static void main(String[] args) {
