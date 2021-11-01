@@ -9,38 +9,56 @@ public class Main {
 	}
 	
 	public void MainMenu() {
-		System.out.println("hello");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
+		System.out.println("Art & Cla Fashion");
+		System.out.println("=================");
+		System.out.println("1.Sell an Outfit");
+		System.out.println("2.Show Sold Outfit");
+		System.out.println("3.Exit");
+
 	}
 	
 	public void menu1() {
 		cls();
 		
-		String type="";
+		String Type="";
+		String Category="";
+		String name="";
+		String size="";
+		String payment="";
 		double nomor=0;
 		
 		do {
-			System.out.println("");
-			type=scan.nextLine();
-		}while(type == null);
+			System.out.println("Outfit Type [Dress | Shoes]:");
+			Type=scan.nextLine();
+		}while(!Type.equals("Dress") && !Type.equals("Shoes"));
 		
 		do {
-			System.out.println("");
+			System.out.println("Outfit Category [Artys | Classic]:");
+			Category=scan.nextLine();
+		}while(!Category.equals("Artys") && !Category.equals("Classic"));
+		
+		do {
+			System.out.println("Input Name [3-20 chars]:");
+			name=scan.nextLine();
+		}while(name == null);
+		
+		do {
+			System.out.println("Input Price [10000 - 1000000]:");
 			nomor=scan.nextDouble(); scan.nextLine();
-		}while(nomor == 0);
+		}while(nomor > 1000000 || nomor < 10000);
+		
+		do {
+			System.out.println("Input Size [Small | Medium | Large]:");
+			size=scan.nextLine();
+		}while(!size.equals("Small") && !size.equals("Medium") && !size.equals("Large"));
+		
+		do {
+			System.out.println("Input Payment [Credit | Transfer]:");
+			payment=scan.nextLine();
+		}while(!payment.equals("Credit") && !payment.equals("Transfer"));
 	}
 	
 	public void menu2() {
-		cls();
-		
-		
-	}
-	
-	public void menu3() {
 		cls();
 		
 		
@@ -65,13 +83,9 @@ public class Main {
 				menu2();
 				break;
 			}
-			case 3:{
-				menu3();
-				break;
-			}
 		}
 			
-		}while(choose !=0);
+		}while(choose !=3);
 		
 	}
 
