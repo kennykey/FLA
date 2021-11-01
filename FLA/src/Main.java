@@ -5,7 +5,7 @@ public class Main {
 	Scanner scan = new Scanner(System.in);
 	
 	public void cls() {
-		//for(int i=0;i<25;i++) System.out.println();
+		for(int i=0;i<0;i++) System.out.println();
 	}
 	
 	public void MainMenu() {
