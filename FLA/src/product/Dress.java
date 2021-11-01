@@ -1,9 +1,14 @@
 package product;
 
-public class Dress {
-
-	public Dress() {
-		// TODO Auto-generated constructor stub
+public class Dress{
+	
+	protected String Type;
+	protected String name;
+	protected String size;
+	double nomor;
+	
+	public Dress(){
+	
 	}
 
 }

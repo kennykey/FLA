@@ -1,9 +1,14 @@
 package product;
 
-public class Shoes {
-
-	public Shoes() {
-		// TODO Auto-generated constructor stub
+public class Shoes{
+	
+	protected String Type;
+	protected String name;
+	protected String size;
+	double nomor;
+	
+	public Shoes(){
+		
 	}
 
 }
