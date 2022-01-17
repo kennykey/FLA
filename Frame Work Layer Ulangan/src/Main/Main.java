@@ -1,10 +1,14 @@
 package Main;
 
+import java.util.ArrayList;
 import java.util.Scanner;
+
+import data.Katepe;
 
 public class Main {
 	
 	Scanner scan = new Scanner(System.in);
+	ArrayList<Katepe> Katepe = new ArrayList<>();
 	
 	public void cls() {
 		for(int i=0;i<25;i++) System.out.println();
@@ -19,18 +23,22 @@ public class Main {
 		System.out.println("4. Exit");
 	}
 	
+	void print(){
+		
+	}
+	
 	public void menu1() {
 		cls();
 		String Delivery="";
 		String address="";
-		String place="";
+		String birthPlace="";
 		String gender="";
-		String type="";
+		String name="";
 		
 		do {
 			System.out.println("Input name [Cannot Be Empty]: ");
-			type=scan.nextLine();
-		}while(type == null);
+			name=scan.nextLine();
+		}while(name == null);
 		
 		do {
 			System.out.println("Input Gender [Male | Female][Case Sensitive]: ");
@@ -39,8 +47,8 @@ public class Main {
 		
 		do {
 			System.out.println("Input birthplace [Cannot Be Empty]: ");
-			place=scan.nextLine();
-		}while(place == null);
+			birthPlace=scan.nextLine();
+		}while(birthPlace == null);
 		
 		do {
 			System.out.println("Input address [Cannot Be Empty]: ");
@@ -55,8 +63,15 @@ public class Main {
 	
 	public void menu2() {
 		cls();
-		
-		
+		if (Katepe.size()>0)
+		{
+			print();
+		}
+		else
+		{
+			System.out.println("Empty");
+		}
+		scan.nextLine();
 	}
 	
 	public void menu3() {
