@@ -24,7 +24,23 @@ public class Main {
 	}
 	
 	void print(){
+		System.out.println("Entry No");
+		System.out.println("Name          :");
+		System.out.println("Gender        :");
+		System.out.println("BirthPlace    :");
+		System.out.println("Address       :");
+		System.out.println("Current Phase :");
+		System.out.println("========================");
 		
+		for (int i = 0; i < Katepe.size(); i++) {
+			System.out.printf("Entry No",i+1);
+			System.out.printf("Name          :",Katepe.get(i).getName());
+			System.out.printf("Gender        :",Katepe.get(i).getGender());
+			System.out.printf("BirthPlace    :",Katepe.get(i).getBirthPlace());
+			System.out.printf("Address       :",Katepe.get(i).getAddress());
+			System.out.printf("Current Phase :");
+		}
+		System.out.println("========================");
 	}
 	
 	public void menu1() {
