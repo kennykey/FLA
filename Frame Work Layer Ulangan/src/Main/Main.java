@@ -11,7 +11,7 @@ public class Main {
 	}
 	
 	public void MainMenu() {
-		System.out.println("");
+		System.out.println("nice hello");
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
